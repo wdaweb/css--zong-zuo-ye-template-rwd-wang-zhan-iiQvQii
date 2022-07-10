@@ -1,0 +1,206 @@
+* {
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inline-text {
+  font-family: "Lato", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+nav {
+  background: #fff;
+  width: 100%;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .nav-left {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .nav-left .logo {
+  height: 80%;
+}
+nav .nav-left img {
+  width: 100%;
+  height: 100%;
+}
+nav #ham {
+  margin: 0 1rem;
+}
+nav button {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+nav #nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav #lang {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  background: #e03f87;
+  border-radius: 50%;
+  font-weight: 500;
+}
+nav #lang span {
+  padding-left: 2px;
+}
+
+#banner {
+  background: url("../../img/bg-image-1.jpeg") no-repeat center/cover;
+  width: 100%;
+  min-height: 46.875vw;
+  padding: 50px 0;
+  color: #fff;
+}
+#banner .line-decor {
+  height: 40px;
+}
+#banner .line-decor::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 40px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-animation: lineY 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+          animation: lineY 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+#banner p {
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+#banner h1,
+#banner h4 {
+  margin-top: 10px;
+}
+#banner a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#banner a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+  background: #fff;
+}
+#banner a:hover {
+  letter-spacing: 0.3rem;
+}
+
+@-webkit-keyframes lineY {
+  0% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  47% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  48% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  95% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  96% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+}
+
+@keyframes lineY {
+  0% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  47% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  48% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  95% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  96% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+  }
+}

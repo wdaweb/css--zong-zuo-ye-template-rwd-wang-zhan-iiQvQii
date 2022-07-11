@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 100%;
+}
+
+.col-4 {
+  width: calc(100% / 3);
+}
+
+.col-6 {
+  width: 50%;
+}

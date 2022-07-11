@@ -1,8 +1,20 @@
+@import 'variables';
 @import 'global';
 @import 'rwd';
+@import 'grid';
 @import 'text_style';
-@import 'variables';
+
 
 // 內容區塊
-@import './main/navbar';
-@import './main/banner';
+@import './main/01_navbar';
+@import './main/02_banner';
+@import './main/03_carousel';
+@import './main/04_about';
+@import './main/05_disco_graphy';
+@import './main/06_upcoming_event';
+@import './main/07_tour_gallery';
+@import './main/08_upcoming_events';
+@import './main/09_newsletter';
+@import './main/10_become_fan';
+@import './main/11_merch';
+@import './main/12_footer';

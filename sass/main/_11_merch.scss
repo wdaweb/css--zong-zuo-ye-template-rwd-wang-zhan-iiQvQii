@@ -1,0 +1,64 @@
+#merch {
+  background: $l-gray;
+  // background: #ff0;
+  padding: 1.5rem 1.5rem 5rem 1.5rem;
+
+  .card {
+    background: #fff;
+    padding-bottom: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.66667;
+      transition: .5s;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      color: $secondary;
+    }
+  }
+}
+
+#card-btn {
+  button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: .5rem;
+    padding: 0;
+    transition: .5s;
+
+    &:nth-child(1) {
+      background: $m-gray;
+      color: #fff;
+
+      &:hover {
+        background: $secondary;
+      }
+    }
+
+    &:nth-child(2) {
+      background: $secondary;
+      color: #fff;
+
+      &:hover {
+        background: $m-gray;
+      }
+    }
+  }
+}

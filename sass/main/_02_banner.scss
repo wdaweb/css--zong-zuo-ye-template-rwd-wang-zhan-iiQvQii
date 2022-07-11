@@ -1,0 +1,35 @@
+#banner {
+  background: url('../../img/bg-image-1.jpeg')no-repeat center/cover;
+  width: 100%;
+  min-height: 46.875vw;
+  padding: 50px 0;
+  color: #fff;
+
+  .line-decor {
+    height: 40px;
+    // border: 1px solid #f00;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 40px;
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+      animation: lineY 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+    }
+  }
+
+  p {
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: .9rem;
+  }
+
+  a {
+    color: #fff;
+
+    &::after {
+      background: #fff;
+    }
+  }
+}

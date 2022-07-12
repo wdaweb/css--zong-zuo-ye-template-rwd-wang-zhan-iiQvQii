@@ -250,6 +250,57 @@ nav #lang span {
   background: #fff;
 }
 
+#carousel .album-slider {
+  border: 5px solid #ebebeb;
+}
+#carousel ol {
+  counter-reset: li;
+  list-style: decimal-leading-zero;
+}
+
+#about {
+  padding: 3rem 1rem 3rem 1rem;
+  background: url("/img/bg-image-2.jpeg") no-repeat center center/cover;
+  color: #fff;
+  text-align: left;
+  position: relative;
+}
+#about::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+#about .col {
+  position: relative;
+}
+#about h1 {
+  position: relative;
+  padding-left: 50px;
+}
+#about h1::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 40px;
+  height: 1px;
+  width: 40px;
+  background: rgba(255, 255, 255, 0.4);
+}
+#about span {
+  color: #e03f87;
+}
+#about p {
+  font-family: "Lato", sans-serif;
+  padding-bottom: 1rem;
+}
+#about img {
+  padding-top: 1rem;
+}
+
 #disco-graphy {
   background: #f5f5f5;
   padding: 1.5rem 1rem 1rem 1rem;

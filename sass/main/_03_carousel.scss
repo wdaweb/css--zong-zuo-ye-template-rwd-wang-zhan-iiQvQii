@@ -1,0 +1,10 @@
+#carousel {
+  .album-slider {
+    border: 5px solid #ebebeb;
+  }
+
+  ol {
+    counter-reset: li;
+    list-style: decimal-leading-zero;
+  }
+}

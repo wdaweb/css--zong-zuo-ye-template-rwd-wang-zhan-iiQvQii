@@ -1,10 +1,113 @@
 #carousel {
+  padding: 3rem 1rem 3rem 1rem;
+
   .album-slider {
-    border: 5px solid #ebebeb;
+    margin: auto;
+    // position: relative;
+    padding-bottom: 2rem;
+    padding: 3rem 3rem 3rem 3rem;
+    // border: 1px solid #f00;
+
+    button {
+      position: absolute;
+      font-size: 18px;
+      border-bottom: 2px solid #b2b2b2;
+      background: #fff;
+      color: #b2b2b2;
+      border-radius: 0;
+      display: inline;
+      padding: 0;
+      line-height: 1.5;
+    }
   }
 
-  ol {
-    counter-reset: li;
-    list-style: decimal-leading-zero;
+  // 圖片
+  .album-frame {
+    max-width: 250px;
+    position: relative;
+    border: 10px solid #ebebeb;
+    padding: 50px;
+    margin: auto;
+
+    div {
+      margin: 0 .5rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
+
+
+  .album-text {
+    button {
+      background: transparent;
+
+      i {
+        color: $gray;
+      }
+    }
+
+    h3 {
+      color: $secondary;
+      letter-spacing: .4rem;
+    }
+
+    h1 {
+      color: $black;
+      padding-top: 0;
+    }
+
+    a {
+      color: $gray;
+      display: block;
+      line-height: 2;
+      font-family: 'Lato', sans-serif;
+    }
+
+    ol {
+      text-align: left;
+      display: inline-block;
+    }
+
+    li {
+      font-size: 16px;
+
+    }
+  }
+
+  .list-1,
+  .list-2,
+  .list-3,
+  .list-4 {
+    text-align: left;
+    border: solid $l-gray;
+    border-width: 0 0 1px 0;
+    padding: .5rem 0;
+  }
+
+  @include md {
+    .col {
+      width: 50%;
+    }
+  }
+
+  @include lg {
+    .col {}
+  }
+}
+
+
+// 按鈕定位
+#btn-prev {
+  left: -15%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#btn-next {
+  right: -15%;
+  top: 50%;
+  transform: translate(0, -50%);
 }

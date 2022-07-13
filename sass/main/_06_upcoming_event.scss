@@ -22,4 +22,42 @@
   button {
     margin-top: 2rem;
   }
+
+  @include md {
+    padding: 0;
+
+
+    .col {
+      width: 50%;
+      margin: 0;
+      padding: 5rem;
+      text-align: left;
+    }
+
+    #event-left {
+      display: none;
+    }
+
+    #event-bg {
+      display: block;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        left: 276px;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 415px solid $primary;
+        border-left: 136px solid transparent;
+        z-index: 100;
+      }
+    }
+  }
+}
+
+#event-bg {
+  background: url('../../img/image-1-1010x608.jpeg')no-repeat center center/cover;
+  display: none;
 }

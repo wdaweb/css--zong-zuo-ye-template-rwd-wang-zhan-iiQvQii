@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 button {
@@ -145,10 +145,6 @@ a {
 
 .col {
   width: 100%;
-}
-
-.col-4 {
-  width: 33.3333333333%;
 }
 
 .col-6 {
@@ -343,7 +339,7 @@ nav #lang span {
 }
 
 #about {
-  padding: 3rem 1rem 3rem 1rem;
+  padding: 3rem 1rem;
   background: url("/img/bg-image-2.jpeg") no-repeat center center/cover;
   color: #fff;
   text-align: left;
@@ -384,6 +380,14 @@ nav #lang span {
 #about img {
   padding-top: 1rem;
 }
+@media (min-width: 768px) {
+  #about {
+    padding: 5rem 2rem;
+  }
+  #about .col {
+    width: 50%;
+  }
+}
 
 #disco-graphy {
   background: #f5f5f5;
@@ -391,6 +395,13 @@ nav #lang span {
 }
 #disco-graphy a {
   color: #151515;
+}
+#disco-graphy a h3 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#disco-graphy a h3:hover {
+  color: #e03f87;
 }
 #disco-graphy h3 {
   font-weight: 500;
@@ -419,6 +430,17 @@ nav #lang span {
 #disco-graphy #card-btn button:hover {
   background: #e03f87;
 }
+@media (min-width: 768px) {
+  #disco-graphy {
+    padding: 3.5rem 1rem 2rem 1rem;
+  }
+  #disco-graphy .col {
+    width: 50%;
+  }
+  #disco-graphy .card {
+    margin: 0 1rem 4rem 1rem;
+  }
+}
 
 #upcoming-event {
   background: #3f4244;
@@ -439,6 +461,40 @@ nav #lang span {
 }
 #upcoming-event button {
   margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  #upcoming-event {
+    padding: 0;
+  }
+  #upcoming-event .col {
+    width: 50%;
+    margin: 0;
+    padding: 5rem;
+    text-align: left;
+  }
+  #upcoming-event #event-left {
+    display: none;
+  }
+  #upcoming-event #event-bg {
+    display: block;
+    position: relative;
+  }
+  #upcoming-event #event-bg::after {
+    position: absolute;
+    content: "";
+    left: 276px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 415px solid #3f4244;
+    border-left: 136px solid transparent;
+    z-index: 100;
+  }
+}
+
+#event-bg {
+  background: url("../../img/image-1-1010x608.jpeg") no-repeat center center/cover;
+  display: none;
 }
 
 #tour-gallery {
@@ -489,6 +545,12 @@ nav #lang span {
 #tour-gallery #card-btn button:hover {
   background: #e03f87;
 }
+@media (min-width: 768px) {
+  #tour-gallery .col {
+    width: 50%;
+    padding: 0 15px;
+  }
+}
 
 #newsletter {
   padding: 3rem 1rem 2rem 1rem;
@@ -521,6 +583,11 @@ nav #lang span {
   color: #fff;
   width: 100%;
 }
+@media (min-width: 768px) {
+  #newsletter {
+    padding: 3rem 2rem 2rem 2rem;
+  }
+}
 
 #become-fan {
   padding: 1.5rem 1rem 3rem 1rem;
@@ -528,6 +595,18 @@ nav #lang span {
 #become-fan img {
   width: 100%;
   height: 100%;
+}
+@media (min-width: 768px) {
+  #become-fan {
+    padding: 1.5rem 2rem 3rem 2rem;
+  }
+  #become-fan .col,
+#become-fan .col-6 {
+    width: 33.3333%;
+  }
+  #become-fan .last-col {
+    position: relative;
+  }
 }
 
 #fan-top {
@@ -549,12 +628,37 @@ nav #lang span {
   line-height: 1.6;
   font-weight: 400;
 }
+@media (min-width: 768px) {
+  #fan-top {
+    text-align: left;
+  }
+  #fan-top h2 {
+    display: inline-block;
+    font-size: 35px;
+    padding-left: 2rem;
+  }
+  #fan-top p {
+    padding-left: 4rem;
+  }
+  #fan-top i {
+    font-size: 2rem;
+  }
+}
 
 #join-now {
   padding-top: 1rem;
 }
 #join-now a {
   margin-top: 0.5rem;
+}
+@media (min-width: 768px) {
+  #join-now {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 #merch {
@@ -586,6 +690,21 @@ nav #lang span {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   color: #e03f87;
+}
+#merch .card img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #merch {
+    padding: 1.5rem 1rem 5rem 1rem;
+  }
+  #merch .col {
+    width: 33.333%;
+    padding: 0 15px;
+  }
+  #merch .last-col {
+    width: 100%;
+  }
 }
 
 #card-btn button {
@@ -635,6 +754,19 @@ nav #lang span {
 #footer a {
   color: #fff;
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  #footer .col {
+    width: 50%;
+    padding: 0 2rem;
+    text-align: left;
+  }
+  #footer .about {
+    width: 100%;
+  }
+  #footer h2 {
+    border-width: 0 0 0 3px;
+  }
 }
 
 #footer-info {
@@ -699,4 +831,17 @@ nav #lang span {
   margin: 0 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+@media (min-width: 768px) {
+  #footer-copyright {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #footer-copyright .col {
+    width: 50%;
+  }
 }

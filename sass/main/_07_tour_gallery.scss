@@ -56,4 +56,16 @@
       }
     }
   }
+
+  @include md {
+    .row {
+      // align-items: ;
+    }
+
+    .col {
+      width: 50%;
+      padding: 0 15px;
+      // display: inline-block;
+    }
+  }
 }

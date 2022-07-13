@@ -31,6 +31,23 @@
       font-weight: 700;
       color: $secondary;
     }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @include md {
+    padding: 1.5rem 1rem 5rem 1rem;
+
+    .col {
+      width: 33.333%;
+      padding: 0 15px;
+    }
+
+    .last-col {
+      width: 100%;
+    }
   }
 }
 

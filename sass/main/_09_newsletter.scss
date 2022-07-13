@@ -34,4 +34,9 @@
     color: #fff;
     width: 100%;
   }
+
+  @include md {
+    padding: 3rem 2rem 2rem 2rem;
+
+  }
 }

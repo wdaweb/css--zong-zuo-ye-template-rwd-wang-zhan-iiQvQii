@@ -7,6 +7,19 @@
     width: 100%;
     height: 100%;
   }
+
+  @include md {
+    padding: 1.5rem 2rem 3rem 2rem;
+
+    .col,
+    .col-6 {
+      width: 33.3333%;
+    }
+
+    .last-col {
+      position: relative;
+    }
+  }
 }
 
 #fan-top {
@@ -31,6 +44,26 @@
     line-height: 1.6;
     font-weight: 400;
   }
+
+  @include md {
+    text-align: left;
+
+
+    h2 {
+      display: inline-block;
+      font-size: 35px;
+      padding-left: 2rem;
+    }
+
+    p {
+      padding-left: 4rem;
+    }
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
 }
 
 #join-now {
@@ -39,4 +72,12 @@
   a {
     margin-top: .5rem;
   }
+
+  @include md {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 }

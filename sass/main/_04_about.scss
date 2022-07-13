@@ -1,5 +1,5 @@
 #about {
-  padding: 3rem 1rem 3rem 1rem;
+  padding: 3rem 1rem;
   background: url('/img/bg-image-2.jpeg') no-repeat center center/cover;
   color: #fff;
   text-align: left;
@@ -45,5 +45,14 @@
 
   img {
     padding-top: 1rem;
+  }
+
+
+  @include md {
+    padding: 5rem 2rem;
+
+    .col {
+      width: 50%;
+    }
   }
 }

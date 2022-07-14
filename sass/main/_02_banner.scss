@@ -1,5 +1,7 @@
 #banner {
-  background: url('../../img/bg-image-1.jpeg')no-repeat center/cover;
+  position: relative;
+  top: 56px;
+  background: url('../../img/bg-image-1.jpeg')no-repeat center center/cover;
   width: 100%;
   min-height: 46.875vw;
   padding: 50px 0;
@@ -19,17 +21,45 @@
     }
   }
 
+  h1 {
+    font-size: calc(3rem + 2vw);
+  }
+
   p {
     margin-top: 15px;
     font-weight: 300;
-    font-size: .9rem;
+    font-size: calc(.9rem + 1vw);
   }
 
   a {
     color: #fff;
+    font-size: calc(.3rem + 1vw);
+
 
     &::after {
       background: #fff;
+    }
+  }
+
+  @include md {}
+
+  @include lg {
+    top: 0;
+    // padding: 5rem 0;
+    height: 75vh;
+
+    .text-center {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 0);
+      padding-bottom: calc(1rem + 3vw);
+    }
+
+    h1 {
+      font-size: calc(3rem + 5vw);
+      padding: calc(.5rem + 3vw) 0;
+      line-height: 1;
     }
   }
 }

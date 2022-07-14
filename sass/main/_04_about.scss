@@ -50,7 +50,7 @@
 
 
   @include md {
-    padding: 5rem 2rem;
+    padding: 5rem 3rem;
 
     .col {
       transition: .5s;
@@ -59,7 +59,7 @@
   }
 
   @include lg {
-    padding: 10rem 3rem;
+    padding: 10rem 12rem;
 
     h1 {
       font-size: 3rem;

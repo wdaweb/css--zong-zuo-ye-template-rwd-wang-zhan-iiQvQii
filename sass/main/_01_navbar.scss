@@ -1,20 +1,42 @@
 nav {
-  background: #fff;
-  width: 100%;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 1000;
+  // height: 300px;
 
-  .nav-left {
+  #logo-white,
+  .social-icons {
+    display: none;
+  }
+
+  .nav {
+    background: #fff;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    box-shadow:
+      0px 0px 5px 1px rgba(0, 0, 0, 0.1),
+      0px 0px 10px 3px rgba(0, 0, 0, 0.05);
+  }
+
+
+
+  button {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background: transparent;
+    padding: 0;
+  }
+
+  .navbar-left {
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
 
-    .logo {
+    .navbar-logo {
       height: 80%;
     }
 
@@ -25,19 +47,12 @@ nav {
 
   }
 
-  #ham {
+  #navbar-toggler {
     margin: 0 1rem;
   }
 
-  button {
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    background: transparent;
-    padding: 0;
-  }
-
-  #nav-right {
+  // 右側---------------------------------
+  .navbar-right {
     display: flex;
     align-items: center;
   }
@@ -53,6 +68,125 @@ nav {
 
     span {
       padding-left: 2px;
+    }
+  }
+
+  // 收合選單---------------------------
+  .navbar-collapse {
+    background: #fff;
+    width: 300px;
+    height: calc(100vh - 56px);
+    position: fixed;
+    top: 56px;
+    z-index: 999;
+    overflow-x: hidden;
+    padding: 2rem 1rem;
+  }
+
+  .nav-item {
+    padding: .5rem;
+    font-size: 1rem;
+    text-align: left;
+    transition: ease-in-out .3s;
+
+    &:hover {
+      background: $secondary;
+    }
+
+    a {
+      color: $black;
+      display: block;
+    }
+  }
+
+  .d-none {
+    display: none;
+  }
+
+  .d-block {
+    display: block;
+  }
+
+  // lg尺寸換導覽列樣式-------------------------
+  @include lg {
+
+    #logo-black,
+    #navbar-toggler {
+      display: none;
+    }
+
+    #logo-white,
+    .social-icons {
+      display: block;
+    }
+
+    .navbar-left,
+    .navbar-right {
+      width: 33.333%;
+      display: flex;
+      justify-content: center;
+
+      i {
+        color: #fff;
+      }
+    }
+
+    .social-icons {
+      width: 33.333%;
+      display: flex;
+      justify-content: center;
+
+      a {
+        color: #fff;
+        padding: 0.5rem;
+
+      }
+    }
+
+    .nav {
+      background: transparent;
+      box-shadow: none;
+      height: 98px;
+    }
+
+    .navbar-collapse {
+      display: flex;
+      justify-content: center;
+      background: transparent;
+      overflow: hidden;
+      height: 70px;
+      width: 100%;
+      // background: #f00;
+      border-top: 1px solid rgba(255, 255, 255, .2);
+      border-bottom: 1px solid rgba(255, 255, 255, .2);
+      top: 98px;
+      padding: 0;
+    }
+
+    .navbar-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-item {
+      padding: 0 1rem;
+
+      &:hover {
+        background: none;
+      }
+
+      a {
+        color: #fff;
+        transition: .5s;
+        font-size: 1.3rem;
+        letter-spacing: .3rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+
+        &:hover {
+          color: $secondary;
+        }
+      }
     }
   }
 }

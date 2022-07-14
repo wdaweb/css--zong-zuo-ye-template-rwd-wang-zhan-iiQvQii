@@ -9,7 +9,7 @@
   }
 
   @include md {
-    padding: 1.5rem 2rem 3rem 2rem;
+    padding: 1.5rem 3rem 3rem 3rem;
 
     .col,
     .col-6 {
@@ -22,6 +22,7 @@
   }
 
   @include lg {
+    padding: 1.5rem 12rem 3rem 12rem;
 
     .col,
     .col-6 {

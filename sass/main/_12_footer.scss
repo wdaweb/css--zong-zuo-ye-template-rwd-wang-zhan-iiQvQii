@@ -31,7 +31,7 @@
 
     .col {
       width: 50%;
-      padding: 0 2rem;
+      padding: 1rem 3rem;
       text-align: left;
     }
 
@@ -42,33 +42,38 @@
     h2 {
       border-width: 0 0 0 3px;
     }
+
+    #footer-info {
+      padding: 1rem 2rem;
+    }
   }
 
   @include lg {
     .row {
       justify-content: center;
       padding: 0 5rem;
+
+    }
+
+    #footer-info {
+      padding: 2rem 5rem;
     }
 
     .col {
       width: 25%;
-      padding: 0 1rem;
+      padding-left: 5rem;
+
     }
 
     .about {
       width: 50%;
       padding-right: 5rem;
     }
-
-    .menu {
-      padding-left: 4rem;
-
-    }
   }
 }
 
 #footer-info {
-  padding: 10px 0 40px 0;
+  padding: 1rem 0 3rem 0;
   background: $primary;
 }
 
@@ -162,7 +167,7 @@
       width: 50%;
     }
 
-    #social-icons {
+    .social-icons {
       text-align: right;
     }
   }

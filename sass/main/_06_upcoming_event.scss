@@ -49,9 +49,10 @@
   }
 
   @include lg {
-    .col {
-      padding: 8rem;
 
+    // padding: 12rem;
+    .col {
+      padding: calc(10rem + 1.5vw) calc(5rem + 1.5vw);
     }
 
     h1 {

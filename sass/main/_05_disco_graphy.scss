@@ -57,4 +57,12 @@
       margin: 0 1rem 4rem 1rem;
     }
   }
+
+  @include lg {
+    padding: 4rem 3rem 3rem 3rem;
+
+    .col {
+      width: 33.333%;
+    }
+  }
 }

@@ -49,6 +49,12 @@
       width: 100%;
     }
   }
+
+  @include lg {
+    .col {
+      width: 25%;
+    }
+  }
 }
 
 #card-btn {

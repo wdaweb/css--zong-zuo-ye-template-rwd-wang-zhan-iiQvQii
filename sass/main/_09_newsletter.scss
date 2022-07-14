@@ -36,7 +36,23 @@
   }
 
   @include md {
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 3rem 6rem 2rem 6rem;
 
+    button {
+      width: 150px;
+      padding: .5rem 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  @include lg {
+    padding: 3.5rem 10rem 3rem 10rem;
+
+    h1 {
+      font-size: 3rem;
+    }
   }
 }

@@ -23,11 +23,12 @@
     position: relative;
     padding-left: 50px;
 
+    // 橫線
     &::before {
       position: absolute;
       content: '';
       left: 0;
-      top: 40px;
+      top: 55px;
       height: 1px;
       width: 40px;
       background: rgba(255, 255, 255, 0.4);
@@ -52,7 +53,25 @@
     padding: 5rem 2rem;
 
     .col {
+      transition: .5s;
       width: 50%;
+    }
+  }
+
+  @include lg {
+    padding: 10rem 3rem;
+
+    h1 {
+      font-size: 3rem;
+
+      // 橫線
+      &::before {
+        top: 70px;
+      }
+    }
+
+    p {
+      font-size: 1rem;
     }
   }
 }

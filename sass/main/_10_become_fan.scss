@@ -20,6 +20,14 @@
       position: relative;
     }
   }
+
+  @include lg {
+
+    .col,
+    .col-6 {
+      width: 25%;
+    }
+  }
 }
 
 #fan-top {

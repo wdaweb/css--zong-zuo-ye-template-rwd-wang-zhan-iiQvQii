@@ -300,7 +300,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col col-height2">
           <div class="card">
             <img src="./img/masonry-gallery-2-270x530.jpeg">
             <div class="text">
@@ -584,7 +584,7 @@
           </a>
         </div>
       </div>
-      <div class="col">
+      <div class="col menu">
         <h2>MENU</h2>
         <div id="menu-wrap">
           <ul>
@@ -623,6 +623,19 @@
     </div>
   </footer>
 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script>
+    $('#tour-gallery .row').isotope({
+      // options
+      itemSelector: '.col',
+      layoutMode: 'masonry',
+      masonry: {
+        columnWidth: 300,
+        gutter: 20
+      }
+    });
+  </script>
 </body>
 
 </html>
